@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>
+            <span class="header">Guess the Word</span>
+            <span class="score">Your score is <span>0</span></span>
+        </h1>
+        <div class="content">
+            <input type="text" class="user-input" maxlength="1">
+            <div class="inputs"></div>
+            <div class="detail">
+                <p class="definition"><b>Definition:</b> <span></span></p>
+                <p class="word-type"><b>Type:</b> <span></span></p>
+                <p class="level"><b>Level:</b> <span></span></p>
+                <p class="guess-left"><b>Remaining Guesses:</b> <span></span></p>
+                <p class="wrong-letter"><b>Wrong Letters:</b> <span></span></p>
+                <p class="info"><b>Info:</b> <span>No information available yet</span></p>
+                <div class="scores">
+                    <p class="level-a1"><b>A1:</b> <span>0/0</span></p>
+                    <p class="level-a2"><b>A2:</b> <span>0/0</span></p>
+                    <p class="level-b1"><b>B1:</b> <span>0/0</span></p>
+                    <p class="level-b2"><b>B2:</b> <span>0/0</span></p>
+                    <p class="level-c1"><b>C1:</b> <span>0/0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="word.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

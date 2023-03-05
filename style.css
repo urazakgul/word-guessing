@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #dd5e89, #f7bb97);
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 50%;
+    background-color: linear-gradient(to right, #dd5e89, #f7bb97);
+    border-radius: 10px;
+}
+
+.wrapper h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.wrapper h1 span:first-child {
+    margin-right: auto;
+}
+
+.wrapper h1 span:last-child {
+    margin-left: auto;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.wrapper .content {
+    margin: 25px 25px 30px;
+}
+
+.content .user-input {
+    opacity: 0;
+}
+
+.content .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inputs input {
+    height: 50px;
+    width: 50px;
+    margin: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: none;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.inputs input:first-child {
+    margin-left: 0px;
+}
+
+.content .detail {
+    margin: 20px 0 25px;
+}
+
+.detail p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.detail .wrong-letter span {
+    text-transform: uppercase;
+}
+
+.detail .scores {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .inputs input {
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
